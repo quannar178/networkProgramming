@@ -1,0 +1,36 @@
+ Volume in drive D is Data
+ Volume Serial Number is 4A09-0183
+
+ Directory of D:\
+
+11-Jun-19  03:57 PM     1,080,561,623 10_ETS 2019-20190611T083916Z-001.zip
+19-Mar-20  03:14 PM    <DIR>          4W1H
+26-Dec-19  09:49 PM         3,510,202 Air.Explorer.Pro.v2.6.0.zip
+12-Mar-20  09:24 PM    <DIR>          Backup
+25-Feb-20  05:02 PM         4,572,741 Clean Code Share-20200225T100242Z-001.zip
+24-Sep-19  10:20 PM           308,887 embeded.png
+24-Mar-20  08:52 PM         2,197,504 EveryDay.xlsx
+12-Mar-20  09:57 PM    <DIR>          Friends Season 1
+02-Apr-20  11:06 AM            14,128 Functional programming.docx
+24-Mar-20  05:10 PM    <DIR>          IT
+02-Apr-20  05:15 PM           350,430 JAVA document.docx
+02-Apr-20  12:24 PM            15,426 JAVA interface.docx
+28-Apr-19  12:26 AM            55,397 lu?n van.pptx
+20-Jan-20  12:50 AM            14,013 M? d?u.docx
+19-Mar-20  05:29 PM            27,136 nc.exe
+11-Jun-19  03:51 PM        53,681,231 OneDrive-2019-06-11.zip
+28-Mar-20  09:05 PM    <DIR>          Practise IP
+30-Dec-19  05:07 PM    <DIR>          pts
+14-Mar-20  10:06 AM       132,281,782 pts.rar
+08-Mar-20  12:09 AM    <DIR>          quan
+27-Apr-19  08:12 PM         4,958,811 Qu?n ly th?i gian theo ngÖy.docx
+08-Mar-20  12:10 AM    <DIR>          Setup
+19-Mar-20  03:11 PM    <DIR>          SoftSkill
+19-Feb-20  12:58 PM               644 testLap
+02-Apr-20  02:35 PM    <DIR>          University
+29-Jun-19  02:31 PM    <DIR>          youtube
+30-Apr-19  09:35 AM            23,081 Du?ng l?i.docx
+05-May-19  07:44 PM            68,858 Du?c gç khi startup th?t b?i.docx
+31-Dec-19  12:44 AM    <DIR>          D?i h?ctht
+              17 File(s)  1,282,641,894 bytes
+              12 Dir(s)  81,526,259,712 bytes free

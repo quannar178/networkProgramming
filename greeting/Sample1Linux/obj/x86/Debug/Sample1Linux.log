@@ -1,0 +1,10 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.39'
+  Validating architecture
+  Validating architecture
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\Linux.targets(188,5): warning : Current project architecture 'x86' is incompatible with the remote system architecture 'x64' ('x64'). Please switch the project architecture to 'x64' in Configuration Manager.
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  Sample1Linux.vcxproj -> D:\University\2019 2\Lập trình mạng\Sample1\Sample1Linux\bin\x86\Debug\Sample1Linux.out

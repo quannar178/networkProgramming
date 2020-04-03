@@ -1,0 +1,79 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-NARHINT
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : Home
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection I217-LM
+   Physical Address. . . . . . . . . : 54-EE-75-49-F1-3E
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter VirtualBox Host-Only Network:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-05
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::69ed:792b:8fba:b73d%5(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 722075687
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-24-33-DF-66-54-EE-75-49-F1-3E
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter Local Area Connection* 11:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #3
+   Physical Address. . . . . . . . . : CC-3D-82-52-74-76
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 12:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #4
+   Physical Address. . . . . . . . . : CE-3D-82-52-74-75
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : Home
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 7260
+   Physical Address. . . . . . . . . : CC-3D-82-52-74-75
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:ee0:452b:a6b0:35a8:4fa1:ed7e:2444(Preferred) 
+   Temporary IPv6 Address. . . . . . : 2001:ee0:452b:a6b0:394b:41b:85ce:7c56(Preferred) 
+   Link-local IPv6 Address . . . . . : fe80::35a8:4fa1:ed7e:2444%6(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.1.5(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Thursday, April 2, 2020 8:29:02 PM
+   Lease Expires . . . . . . . . . . : Friday, April 3, 2020 8:29:00 PM
+   Default Gateway . . . . . . . . . : fe80::a265:18ff:fe41:7800%6
+                                       192.168.1.1
+   DHCP Server . . . . . . . . . . . : 192.168.1.1
+   DHCPv6 IAID . . . . . . . . . . . : 483147138
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-24-33-DF-66-54-EE-75-49-F1-3E
+   DNS Servers . . . . . . . . . . . : 2001:ee0:26::26
+                                       2001:ee0:23::23
+                                       123.26.26.26
+                                       123.23.23.23
+   NetBIOS over Tcpip. . . . . . . . : Enabled

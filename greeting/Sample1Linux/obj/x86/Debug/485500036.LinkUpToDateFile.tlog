@@ -1,0 +1,1 @@
+g++ -o "/home/baquan/projects/Sample1Linux/bin/x86/Debug/Sample1Linux.out" -Wl,--no-undefined -Wl,-u--undefined=m -Wl,-u--undefined=GL -Wl,-u--undefined=GLU -Wl,-u--undefined=glut -Wl,-z,relro -Wl,-z,noexecstack /home/baquan/projects/Sample1Linux/obj/x86/Debug/main.o

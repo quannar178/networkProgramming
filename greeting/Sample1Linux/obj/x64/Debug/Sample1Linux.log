@@ -1,0 +1,9 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.39'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  Sample1Linux.vcxproj -> D:\University\2019 2\Lập trình mạng\Sample1\Sample1Linux\bin\x64\Debug\Sample1Linux.out

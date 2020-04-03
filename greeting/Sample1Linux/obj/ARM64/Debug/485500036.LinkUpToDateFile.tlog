@@ -1,0 +1,1 @@
+g++ -o "/home/baquan/projects/Sample1Linux/bin/ARM64/Debug/Sample1Linux.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/baquan/projects/Sample1Linux/obj/ARM64/Debug/main.o

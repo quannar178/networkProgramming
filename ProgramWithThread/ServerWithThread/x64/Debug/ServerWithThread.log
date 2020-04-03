@@ -1,0 +1,23 @@
+﻿  ServerWithThread.cpp
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(15,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(23,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(30,38): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(64,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(70,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(82,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'SOCKET'
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(82,10): message : consider using '%lld' in the format string
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(82,10): message : consider using '%Id' in the format string
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(82,10): message : consider using '%I64d' in the format string
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\ServerWithThread\ServerWithThread.cpp(90,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Source.cpp
+  Generating Code...
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_accept referenced in function main
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_bind referenced in function main
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_closesocket referenced in function "unsigned long __cdecl ClientThread(void *)" (?ClientThread@@YAKPEAX@Z)
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_htons referenced in function main
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_listen referenced in function main
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_recv referenced in function "unsigned long __cdecl ClientThread(void *)" (?ClientThread@@YAKPEAX@Z)
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_send referenced in function "unsigned long __cdecl ClientThread(void *)" (?ClientThread@@YAKPEAX@Z)
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_socket referenced in function main
+ServerWithThread.obj : error LNK2019: unresolved external symbol __imp_WSAStartup referenced in function main
+D:\University\2019 2\Lập trình mạng\ProgramWithThread\x64\Debug\ServerWithThread.exe : fatal error LNK1120: 9 unresolved externals
