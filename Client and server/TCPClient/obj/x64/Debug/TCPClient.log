@@ -1,0 +1,11 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.39'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+/usr/bin/ld : error : /home/baquan/projects/TCPClient/obj/x64/Debug/main.o: in function `main':
+D:\University\2019 2\Lập trình mạng\TCPServer\TCPClient\main.cpp(23): warning : the `gets' function is dangerous and should not be used.
+  TCPClient.vcxproj -> D:\University\2019 2\Lập trình mạng\TCPServer\TCPClient\bin\x64\Debug\TCPClient.out

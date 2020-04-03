@@ -1,2 +1,0 @@
-﻿  TCPServer.cpp
-D:\University\2019 2\Lập trình mạng\TCPServer\TCPServer\TCPServer.cpp(44): error C4716: 'recvTCP': must return a value

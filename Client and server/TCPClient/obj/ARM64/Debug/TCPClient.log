@@ -1,0 +1,12 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.1.39'
+  Validating architecture
+  Validating architecture
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\Linux.targets(188,5): warning : Current project architecture 'ARM64' is incompatible with the remote system architecture 'x64' ('x64'). Please switch the project architecture to 'x64' in Configuration Manager.
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+/usr/bin/ld : error : /home/baquan/projects/TCPClient/obj/ARM64/Debug/main.o: in function `main':
+D:\University\2019 2\Lập trình mạng\TCPServer\TCPClient\main.cpp(25): warning : the `gets' function is dangerous and should not be used.
+  TCPClient.vcxproj -> D:\University\2019 2\Lập trình mạng\TCPServer\TCPClient\bin\ARM64\Debug\TCPClient.out

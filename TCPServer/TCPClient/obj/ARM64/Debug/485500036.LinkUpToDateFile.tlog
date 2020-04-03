@@ -1,1 +1,0 @@
-g++ -o "/home/baquan/projects/TCPClient/bin/ARM64/Debug/TCPClient.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/baquan/projects/TCPClient/obj/ARM64/Debug/main.o
