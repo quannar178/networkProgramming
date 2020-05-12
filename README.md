@@ -18,4 +18,5 @@
 ***
 ## HTTPFileServer
 - Program can read title contain in a file and send it for client, show in HTML format.
+- 12/05/2020 can send a picture jpeg show in browser
 

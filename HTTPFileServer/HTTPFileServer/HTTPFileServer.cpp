@@ -4,6 +4,35 @@
 
 char* g_html = NULL;
 
+void ScanFile(SOCKET c, char* path) {
+	char header[1024];
+	memset(header, 0, 1024);
+	strcpy(header, "HTTP/1.1 200 OK\nServer: NBQ\nContent-type: image/jpeg\n");
+
+	char* patter = strstr(path, "QUAN");
+	patter[0] = 0;
+
+	char fullpath[1024];
+	memset(fullpath, 0, 1024);
+	sprintf(fullpath, "C:%s", path);
+
+	FILE* f = fopen(fullpath, "rb");
+
+	fseek(f, 0, SEEK_END);
+	int flen = ftell(f);
+	fseek(f, 0, SEEK_SET);
+	sprintf(header + strlen(header), "Content-length: %d\n\n", flen);
+
+	send(c, header, strlen(header), 0);
+
+	char buffer[1024];
+	while (!feof(f)) {
+		int r = fread(buffer, 1, sizeof(buffer), f);
+		send(c, buffer, r, 0);
+	}
+	fclose(f);
+}
+
 void ScanFolder(char* path) {
 	WIN32_FIND_DATAA DATA;
 	char fullpath[1024];
@@ -27,9 +56,9 @@ void ScanFolder(char* path) {
 	}
 	else
 		if (path[strlen(path) - 1] == '/')
-			sprintf(tempHtml, "<a href=\"%s%s\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
+			sprintf(tempHtml, "<a href=\"%s%sQUAN\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
 		else
-			sprintf(tempHtml, "<a href=\"%s/%s\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
+			sprintf(tempHtml, "<a href=\"%s/%sQUAN\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
 
 	int oldLen = g_html != NULL ? strlen(g_html) : 0;
 	g_html = (char*)realloc(g_html, oldLen + strlen(tempHtml) + 1);
@@ -48,9 +77,9 @@ void ScanFolder(char* path) {
 			}
 			else {
 					if (path[strlen(path) - 1] == '/')
-						sprintf(tempHtml, "<a href=\"%s%s\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
+						sprintf(tempHtml, "<a href=\"%s%sQUAN\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
 					else
-						sprintf(tempHtml, "<a href=\"%s/%s\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
+						sprintf(tempHtml, "<a href=\"%s/%sQUAN\">%s</a><br>", path, DATA.cFileName, DATA.cFileName);
 			}
 			int oldLen = g_html != NULL ? strlen(g_html) : 0;
 			g_html = (char*)realloc(g_html, oldLen + strlen(tempHtml) + 1);
@@ -63,12 +92,11 @@ void ScanFolder(char* path) {
 DWORD WINAPI ClientThread(LPVOID params) {
 	SOCKET c = (SOCKET)params;
 	char buffer[1024];
-	char* header = (char*)"HTTP/1.1 200 OK\nServer: NBQ\nContent-type: text/html\n\n";
+	
 
 	memset(buffer, 0, sizeof(buffer));
 
 	recv(c, buffer, sizeof(buffer), 0);
-	send(c, header, strlen(header), 0);
 
 	g_html = (char*)calloc(1024, 1);
 	//sprintf(g_html, "<html><h1>Simple HTTP File Server</h1><br>");
@@ -87,10 +115,27 @@ DWORD WINAPI ClientThread(LPVOID params) {
 	//memset(RealPath, 0, sizeof(RealPath));
 	//sprintf(RealPath, "C:\\%s\*.*", PATH);
 
-	ScanFolder(PATH/*, g_html + strlen(g_html)*/);
-	g_html = (char*)realloc(g_html, strlen(g_html) + 8);
-	sprintf(g_html + strlen(g_html), "</html>");
-	send(c, g_html, strlen(g_html), 0);
+
+	//
+	while (strstr(PATH, "%20") != NULL) {
+		char* found = strstr(PATH, "%20");
+		found[0] = ' ';
+		strcpy(found + 1, found + 3);
+	}
+
+	if (strstr(PATH, "QUAN")) {
+		ScanFile(c, PATH);
+	}
+	else
+	{
+		char* header = (char*)"HTTP/1.1 200 OK\nServer: NBQ\nContent-type: text/html\n\n";
+		send(c, header, strlen(header), 0);
+		ScanFolder(PATH/*, g_html + strlen(g_html)*/);
+		g_html = (char*)realloc(g_html, strlen(g_html) + 8);
+		sprintf(g_html + strlen(g_html), "</html>");
+		send(c, g_html, strlen(g_html), 0);
+	}
+
 	closesocket(c);
 	return 0;
 }
