@@ -7,14 +7,27 @@ char* g_html = NULL;
 void ScanFile(SOCKET c, char* path) {
 	char header[1024];
 	memset(header, 0, 1024);
-	strcpy(header, "HTTP/1.1 200 OK\nServer: NBQ\nContent-type: image/jpeg\n");
-
+	strcpy(header, "HTTP/1.1 200 OK\nServer: NBQ\n");
+	
 	char* patter = strstr(path, "QUAN");
 	patter[0] = 0;
+
+	if (_stricmp(path + strlen(path) - 4, ".jpg") == 0 ) {
+		sprintf(header + strlen(header), "Content-type: image/jpeg\n");
+	}
+	else if (_stricmp(path + strlen(path) - 4, ".mp4") == 0) {
+		sprintf(header + strlen(header), "Content-type: video/mp4\n");
+	}
+	else
+	{
+		sprintf(header + strlen(header), "Content-type: application/octet-stream\n");
+	}
 
 	char fullpath[1024];
 	memset(fullpath, 0, 1024);
 	sprintf(fullpath, "C:%s", path);
+
+
 
 	FILE* f = fopen(fullpath, "rb");
 
